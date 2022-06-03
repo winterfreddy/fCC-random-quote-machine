@@ -46,7 +46,7 @@ class App extends React.Component {
     }
 
     let randomNum = randomInt();
-    while(randomNum === this.state.randomIdx) randomNum = randomInt;
+    while(randomNum === this.state.randomIdx) randomNum = randomInt();
 
     this.setState({randomIdx: randomNum});
   }
